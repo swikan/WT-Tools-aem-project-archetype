@@ -38,7 +38,7 @@ jobs:
       commit: ${{ steps.getCommit.outputs.commit }}
     steps:
       # Checkout this project into a sub folder
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
         with:
           path: archetype
       # Set up JDK 11
@@ -49,7 +49,7 @@ jobs:
           java-version: '11'
       # Set up dependency cache
       - name: Cache local Maven repository
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('archetype/**/pom.xml') }}
