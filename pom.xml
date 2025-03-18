@@ -108,7 +108,7 @@
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-all</artifactId>
-                        <version>3.0.8</version>
+                        <version>3.0.24</version>
                         <type>pom</type> <!-- required JUST since Groovy 2.5.0 -->
                     </dependency>
                 </dependencies>
@@ -171,16 +171,6 @@
             <id>it-basic</id>
             <properties>
                 <archetype.test.projectsDirectory>${project.build.testOutputDirectory}/projects/basic</archetype.test.projectsDirectory>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>it-java8</id>
-            <activation>
-                <jdk>[1.8,11)</jdk>
-            </activation>
-            <properties>
-                <archetype.test.projectsDirectory>${project.build.testOutputDirectory}/projects-1_8</archetype.test.projectsDirectory>
             </properties>
         </profile>
 
