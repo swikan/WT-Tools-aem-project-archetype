@@ -48,7 +48,8 @@
     </developers>
 
     <properties>
-        <maven.archetype.version>3.2.1</maven.archetype.version>
+        <maven.archetype.version>3.3.1</maven.archetype.version>
+        <groovy.version>4.0.22</groovy.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -106,10 +107,9 @@
                 </executions>
                 <dependencies>
                     <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-all</artifactId>
-                        <version>3.0.24</version>
-                        <type>pom</type> <!-- required JUST since Groovy 2.5.0 -->
+                        <groupId>org.apache.groovy</groupId>
+                        <artifactId>groovy</artifactId>
+                        <version>${groovy.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>
